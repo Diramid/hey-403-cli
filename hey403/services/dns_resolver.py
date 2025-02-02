@@ -6,8 +6,8 @@ from urllib.parse import urlparse
 
 from dns import resolver
 
-from hey403.network.ban_ips import BAN_IPS
-from hey403.utils.dns_utils import get_status_code_from_request, configure_linux_dns, configure_windows_dns, \
+from ..network.ban_ips import BAN_IPS
+from ..utils.dns_utils import get_status_code_from_request, configure_linux_dns, configure_windows_dns, \
     configure_mac_dns
 
 

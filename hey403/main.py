@@ -3,11 +3,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from rich.console import Console
 from rich.progress import Progress
 
-from cli.parser import build_parser
-from hey403.services.dns_resolver import set_dns, test_dns
-from hey403.utils.network_utils import check_internet_connection
-from hey403.utils.table import create_table
-from network.dns_servers import DNS_SERVERS
+from .cli.parser import build_parser
+from .services.dns_resolver import set_dns, test_dns
+from .utils.network_utils import check_internet_connection
+from .utils.table import create_table
+from .network.dns_servers import DNS_SERVERS
 
 
 def main():
